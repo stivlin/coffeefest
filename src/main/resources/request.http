@@ -1,0 +1,14 @@
+### ListContries
+GET http://localhost:8080/api/v1/countries
+Accept: application/json
+
+### CountryById
+@countryId = 3
+GET http://localhost:8080/api/v1/countries/{{countryId}}
+
+###
+POST http://localhost:8080/api/v1/countries
+
+
+
+
