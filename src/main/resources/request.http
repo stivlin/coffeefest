@@ -8,7 +8,19 @@ GET http://localhost:8080/api/v1/countries/{{countryId}}
 
 ###
 POST http://localhost:8080/api/v1/countries
+Content-type: application/json
 
-
+{
+"name": "Armenia",
+"religion": "Ortodox",
+"population": 2778000,
+"isSnowly": true,
+"area": 29743,
+"capital": "yerevan",
+"president": "Vahagn",
+"UTCTime": "+4",
+"currency": "Armenian Dram",
+"yearFoundation": 1991
+}
 
 

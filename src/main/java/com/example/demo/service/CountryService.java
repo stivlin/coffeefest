@@ -1,7 +1,10 @@
-package com.example.demo;
+package com.example.demo.service;
+
+import com.example.demo.model.CountryItem;
+import com.example.demo.model.CreateCountryCommand;
+import com.example.demo.model.UpdateCountryCommand;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface CountryService {
 

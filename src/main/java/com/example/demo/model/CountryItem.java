@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import lombok.Value;
 
@@ -8,14 +8,14 @@ public class CountryItem {
 
     String name;
     Long id;
-    int population;
+    Integer population;
     String religion;
     Boolean isSnowly;
-    int area;
+    Integer area;
     String capital;
     String president;
     String UTCTime;
     String currency;
-    int yearFoundation;
+    Integer yearFoundation;
 
 }

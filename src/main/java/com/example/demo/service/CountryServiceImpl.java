@@ -1,10 +1,14 @@
-package com.example.demo;
+package com.example.demo.service;
 
+import com.example.demo.model.CountryItem;
+import com.example.demo.model.CreateCountryCommand;
+import com.example.demo.model.UpdateCountryCommand;
+import com.example.demo.repositoty.CountryRepository;
+import com.example.demo.entities.CountryEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

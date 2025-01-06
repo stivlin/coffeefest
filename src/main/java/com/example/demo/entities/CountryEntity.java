@@ -1,12 +1,10 @@
-package com.example.demo;
+package com.example.demo.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Entity
 @Table(name = "countries")
@@ -17,14 +15,14 @@ import java.util.List;
 public class CountryEntity {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
     private String name;
 // численность
     @Column
-    private int population;
+    private Integer population;
     // язык
     @Column
     private String language;
@@ -36,7 +34,7 @@ public class CountryEntity {
     private Boolean isSnowly;
     // площадь
     @Column
-    private int area;
+    private Integer area;
     // столица
     @Column
     private String capital;
@@ -51,5 +49,7 @@ public class CountryEntity {
     private String currency;
     // год основания
     @Column(name = "year_foundation")
-    private int yearFoundation;
+    private Integer yearFoundation;
+    // int = 99999 == 0 db null = conflict
+    // Integer = new Integer(99999); // == null
 }
