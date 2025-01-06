@@ -17,6 +17,9 @@ public class UpdateCountryCommand {
     int area;
     String capital;
     String president;
-    String currency;
+    String currency; // = null
 
 }
+
+// PUT - обновляем всю сущность
+// PATCH - несколько полей

@@ -13,6 +13,8 @@ public interface CountryService {
 
     String updateCountry(UpdateCountryCommand updateCountryCommand, Long countryId);
 
+    String deleteCountry(Long countryId);
+
 //    CountryItem getByName(String name);
 
 //    List<CityItem> getCitiesByCountry(Long countryId);

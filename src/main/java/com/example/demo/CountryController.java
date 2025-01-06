@@ -28,15 +28,13 @@ class CountryController {
     }
 
     @PutMapping("/countries/{countryId}")
-    String updateZhopa(@PathVariable Long countryId, @RequestBody UpdateCountryCommand upc) {
+    String updateCountry(@PathVariable Long countryId, @RequestBody UpdateCountryCommand upc) {
         return countryService.updateCountry(upc, countryId);
     }
 
-//    @GetMapping("/countries/{countryName}")
-//    CountryItem getByName(@PathVariable String countryName) {
-//        return countryService.getByName(countryName);
-//    }
-
-
+    @DeleteMapping("/countries/{countryId}")
+    String deleteCountry(@PathVariable Long countryId) {
+        return countryService.deleteCountry(countryId);
+    }
 }
 
