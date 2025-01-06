@@ -3,6 +3,7 @@ package com.example.demo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -94,5 +95,28 @@ public class CountryServiceImpl implements CountryService {
                 countryEntity.getCurrency(),
                 countryEntity.getYearFoundation()
         );
+    }
+
+    private void getStreamExamples() {
+        List<String> names = Arrays.asList("Nina", "Steven", "Dina", "Alejandro");
+        // 1.
+        List<String> namesWithoutAlejo = names
+                .stream()
+                .filter(name -> name.contains("o"))
+                .toList();
+
+        // 2.
+        List<String> upperNames = namesWithoutAlejo
+                .stream()
+                .map(String::toUpperCase)
+                .toList();
+
+        // 3.
+        long count = upperNames.size();
+
+        // 4.
+        Optional<String> optional = Optional.of("Steven");
+        optional.map(String::toUpperCase);
+
     }
 }
