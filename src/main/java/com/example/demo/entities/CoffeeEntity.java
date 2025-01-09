@@ -33,7 +33,6 @@ public class CoffeeEntity {
     @Column(nullable = false)
     private Double price;
 
-    @Min(value = 0)
     private Integer harvest; //уражай
 
     // TODO погуглить аннотации @ManyToOne и остальные

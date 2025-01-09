@@ -18,4 +18,5 @@ public class OrderItem {
     LocalDateTime shippedStatus;
     // TODO: 3. Instant - погуглить
     Integer totalQuantity;
+
 }

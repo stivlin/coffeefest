@@ -32,7 +32,7 @@ public class CustomerEntity {
     private String phone;
 
     // TODO: 1. @Min - чаще используется для валидации входных данных
-    @Min(value = 0)
+
     private Integer age;
 
 }
